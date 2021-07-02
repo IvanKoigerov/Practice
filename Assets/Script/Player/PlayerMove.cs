@@ -17,7 +17,17 @@ public class PlayerMove : MonoBehaviour
     private Animator myAnimator;
     private Vector3 change;
 
-    //public FloatValue PlayerHP;
+    [Header("HP")]
+    public FloatValue PlayerHP;
+    public Signals playerSignalHP;
+    //public float HP;
+    [Header("")]
+    public VectorValue startPoint;
+    //[Header("Inventory")]
+    //public Inventory PlayerInventory;
+    //public SpriteRenderer takeItem;
+    //[Header("Signal")]
+    //public Signals playerStagger;
 
     void Start()
     {
@@ -82,16 +92,16 @@ public class PlayerMove : MonoBehaviour
 
     public void Knock(float knockTime, float damage)
     {
-        //PlayerHP.RunTimeValue -= damage;
-        //playerSignalHP.Raise();
-        //if (PlayerHP.RunTimeValue > 0)
-        //{
-        StartCoroutine(Knocked(knockTime));
-        //}
-        //else
-        //{
-        //    gameObject.SetActive(false);
-        //}
+        PlayerHP.RunTimeValue -= damage;
+        playerSignalHP.Raise();
+        if (PlayerHP.RunTimeValue > 0)
+        {
+            StartCoroutine(Knocked(knockTime));
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
 
     }
     private IEnumerator Knocked(float knockTime)

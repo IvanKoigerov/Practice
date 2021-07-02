@@ -35,10 +35,10 @@ public class KnockBack : MonoBehaviour
 
             }
         }
-        if (other.CompareTag("Breakable") && this.gameObject.CompareTag("hit"))
-        {
-            //other.GetComponent<OBJ1>().Smash();
-        }
+        //if (other.CompareTag("Breakable") && this.gameObject.CompareTag("hit"))
+        //{
+        //    //other.GetComponent<OBJ1>().Smash();
+        //}
 
     }
 

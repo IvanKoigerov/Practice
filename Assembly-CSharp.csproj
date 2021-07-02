@@ -56,13 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Script\CameraMove.cs" />
-    <Compile Include="Assets\Script\RoomMove.cs" />
-    <Compile Include="Assets\Script\Enemy\LogEnemy.cs" />
-    <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\KnockBack.cs" />
+    <Compile Include="Assets\Script\Enemy\Enemy.cs" />
     <Compile Include="Assets\Script\Signal\FloatValue.cs" />
+    <Compile Include="Assets\Script\Signal\Signals.cs" />
+    <Compile Include="Assets\Script\Loc\CameraMove.cs" />
+    <Compile Include="Assets\Script\Signal\BoolValue.cs" />
+    <Compile Include="Assets\Script\Signal\VectorValue.cs" />
+    <Compile Include="Assets\Script\Loc\RoomMove.cs" />
+    <Compile Include="Assets\Script\Enemy\LogEnemy.cs" />
+    <Compile Include="Assets\Script\SignalListener.cs" />
+    <Compile Include="Assets\Script\Player\PlayerMove.cs" />
+    <Compile Include="Assets\Script\Player\HeartManager.cs" />
+    <Compile Include="Assets\Script\Loc\ChangeScenes.cs" />
+    <Compile Include="Assets\Script\Player\ContextClue.cs" />
+    <Compile Include="Assets\Script\Loc\interactable\Interectable.cs" />
+    <Compile Include="Assets\Script\Loc\interactable\Door\Door.cs" />
+    <Compile Include="Assets\Script\Loc\interactable\DiaSign.cs" />
+    <Compile Include="Assets\Script\Loc\interactable\Door\Button.cs" />
+    <Compile Include="Assets\Script\Loc\interactable\chest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
